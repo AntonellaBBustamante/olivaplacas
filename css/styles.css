@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+h1{font-size: 3.5em;}
+h2{
+    font-size: 2.7em;
+    text-align: center;
+}
+
+@media (min-width:700px){
+    .h2{
+        text-align: left;
+    }
+}
+h3{
+    font-size: 2em;
+    text-align: center;
+}
+@media (min-width:700px){
+    .h3{
+        text-align: left;
+    }
+p{
+    font-size: 3opx;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+.cursiva{
+    font-style: italic;
+}
+
+ol{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row-reverse;
+    height: 10px;
+    width: auto;
+    margin: 10px;
+}
+@media (max-width:768){
+    .ol{
+        flex-flow: column;
+    }
+}
+ul{
+    list-style-type: square;
+    flex-flow: row;
+}
+@media (max-width:768){
+    .ul{
+        flex-flow: column;
+    }
+}
+ul a:hover{
+    color: #047616;
+}
+
+.igColor{
+    color: black;
+}
+body{
+    background-color: #e9f8e7;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serifs
+}
+button{
+    font-size: 1.5em;
+    font-weight: #181D27;
+    padding: 10px 40;
+    border-radius: 10px;
+    border: 1px solid #181D27;
+    box-shadow: 2px 2px 10px #181D27;
+    color: #181D27;
+    background-color: #066f14;
+}
+button:hover{
+    background-color: #18a62e;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 10px;
+    height: 25vh;
+}
+.color-acento{
+    color: #066f14;
+}
+header{
+    background-color: hsla(0, 0%, 97%, 0.929);
+    padding: 1px;
+
+}
+
+.container img{
+    width: 400px;
+    height: auto; 
+    text-align: center;
+    padding: 0%;
+}
+@media (min-width:700px){
+    .container{
+        text-align: left;
+    }
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(1, 7, 2);
+}
+
+header a:hover{
+    color: #047616;
+}
+
+
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(141, 243, 161, 0.5),
+        rgba(10, 16, 11, 0.5)
+    )
+    ,url(../img/techobaño.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+#producto.container { 
+  text-align: center;
+  padding: 400px 12px;
+}
+
+footer{
+    background-color: hsla(0, 0%, 97%, 0.929);
+    
+} 
+footer img{
+    width: 300px;
+    height: auto;
+}
